@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6626261B273E536D0046DD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626261A273E536D0046DD05 /* AppDelegate.swift */; };
 		6626261D273E536D0046DD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626261C273E536D0046DD05 /* SceneDelegate.swift */; };
-		6626261F273E536D0046DD05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626261E273E536D0046DD05 /* ViewController.swift */; };
+		6626261F273E536D0046DD05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626261E273E536D0046DD05 /* MainViewController.swift */; };
 		66262622273E536D0046DD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66262620273E536D0046DD05 /* Main.storyboard */; };
 		66262624273E536D0046DD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66262623273E536D0046DD05 /* Assets.xcassets */; };
 		66262627273E536D0046DD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66262625273E536D0046DD05 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		66262617273E536D0046DD05 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6626261A273E536D0046DD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6626261C273E536D0046DD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6626261E273E536D0046DD05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6626261E273E536D0046DD05 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		66262621273E536D0046DD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66262623273E536D0046DD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66262626273E536D0046DD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66065A96273E804E00A730D5 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		66065A97273E820E00A730D5 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		66065A98273E821A00A730D5 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		66065A99273E823100A730D5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		66065A9A273E824500A730D5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				66065A9C273E826400A730D5 /* UseCases */,
+				66065A9B273E824F00A730D5 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		66065A9B273E824F00A730D5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		66065A9C273E826400A730D5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		6626260E273E536D0046DD05 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +107,68 @@
 		66262619273E536D0046DD05 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				6626261A273E536D0046DD05 /* AppDelegate.swift */,
-				6626261C273E536D0046DD05 /* SceneDelegate.swift */,
-				6626261E273E536D0046DD05 /* ViewController.swift */,
-				66262620273E536D0046DD05 /* Main.storyboard */,
-				66262623273E536D0046DD05 /* Assets.xcassets */,
-				66262625273E536D0046DD05 /* LaunchScreen.storyboard */,
-				66262628273E536D0046DD05 /* Info.plist */,
+				66065A9A273E824500A730D5 /* Domain */,
+				66065A96273E804E00A730D5 /* Firebase */,
+				6686CD89273E65D700A9F75E /* Screens */,
+				6686CD88273E659B00A9F75E /* Supports */,
+				6686CD87273E659400A9F75E /* Data */,
+				6686CD86273E658900A9F75E /* Sources */,
+				6686CD85273E652800A9F75E /* Extentions */,
 			);
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		6686CD85273E652800A9F75E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		6686CD86273E658900A9F75E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66262623273E536D0046DD05 /* Assets.xcassets */,
+				66262625273E536D0046DD05 /* LaunchScreen.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6686CD87273E659400A9F75E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				66065A99273E823100A730D5 /* Repositories */,
+				66065A98273E821A00A730D5 /* Remote */,
+				66065A97273E820E00A730D5 /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6686CD88273E659B00A9F75E /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				66262628273E536D0046DD05 /* Info.plist */,
+				6626261A273E536D0046DD05 /* AppDelegate.swift */,
+				6626261C273E536D0046DD05 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		6686CD89273E65D700A9F75E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6686CD8A273E65E900A9F75E /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6686CD8A273E65E900A9F75E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6626261E273E536D0046DD05 /* MainViewController.swift */,
+				66262620273E536D0046DD05 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6626261F273E536D0046DD05 /* ViewController.swift in Sources */,
+				6626261F273E536D0046DD05 /* MainViewController.swift in Sources */,
 				6626261B273E536D0046DD05 /* AppDelegate.swift in Sources */,
 				6626261D273E536D0046DD05 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +395,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z839S848GQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = QuizApp/Info.plist;
+				INFOPLIST_FILE = QuizApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +423,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z839S848GQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = QuizApp/Info.plist;
+				INFOPLIST_FILE = QuizApp/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
