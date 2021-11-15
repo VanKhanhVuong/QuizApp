@@ -7,13 +7,17 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MainViewModelEvent {
+    func didBeginProcessing() { }
+    
+    func didFinishProcessing() { }
+    
+    lazy var viewModel: MainViewModelProtocol = MainViewModel(delegate: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.viewModel.getValueTestApi()
     }
-
-
 }
 

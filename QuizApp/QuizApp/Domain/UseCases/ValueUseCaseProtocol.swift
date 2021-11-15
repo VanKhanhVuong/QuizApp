@@ -11,7 +11,7 @@ protocol ValueUseCaseProtocol {
     func getValueApi(completionHandler: @escaping (Result<TestApi, ErrorModel>) -> Void)
 }
 
-final class ProductUseCase: ValueUseCaseProtocol {
+final class ValueUseCase: ValueUseCaseProtocol {
     private let valueRepository: ValueRepositoryProtocol = ValueRepository()
     
     func getValueApi(completionHandler: @escaping (Result<TestApi, ErrorModel>) -> Void) {
