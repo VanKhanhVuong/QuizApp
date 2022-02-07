@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "JsonClient.jsonDecode&lt;&#x3c4;_0_0&gt;(type:jsonData:):JsonClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "T">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in ApiClient.request&lt;&#x3c4;_0_0&gt;(request:completion:):ApiClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ApiBase&lt;T.Reponse&gt;.self,">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
